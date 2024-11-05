@@ -1,0 +1,32 @@
+html{
+    padding: 20px;
+}
+main{
+    display: grid;
+    width: 100%;
+}
+p{
+    font-size: x-large;
+}
+.sec{
+    padding-top: 20px;
+}
+.but{
+    display: flex;
+    justify-content: space-between;
+
+}
+.but button{
+    width: 98px;
+    border-radius: 73px;
+    background: #008484;
+    box-shadow:  5px 155px 100px #007070,
+                 -5px -5px 100px #009898;
+                 color: black;
+}
+*{
+    color: black;
+}
+img{
+    box-sizing: content-box;
+}
