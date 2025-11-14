@@ -1,112 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-    <title>portfolio</title>
-  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mina Magdy - WordPress Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #f8f9fa;
+            font-family: "Poppins", sans-serif;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .project-card {
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: #fff;
+            overflow: hidden;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+        footer {
+            padding: 40px;
+            background: #343a40;
+            color: #fff;
+            text-align: center;
+        }
+        .section-title {
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .skills-grid span {
+            display: inline-block;
+            margin: 8px;
+            padding: 12px 20px;
+            font-size: 14px;
+            border-radius: 50px;
+            color: #fff;
+        }
+        .skill-wordpress {background: #21759b;}
+        .skill-theme {background: #d54e21;}
+        .skill-elementor {background: #32b3e0;}
+        .skill-woocommerce {background: #96588a;}
+        .skill-php {background: #8993be;}
+        .skill-html {background: #e34c26;}
+        .skill-api {background: #f7a823;}
+        .skill-seo {background: #28a745;}
+        .skill-hosting {background: #6c757d;}
+        .contact-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 <body>
- <div class="row gy-3 main">
+    <header class="animate__animated animate__fadeInDown">
+        <h1 class="fw-bold">Mina Magdy</h1>
+        <p class="lead">WordPress Developer | Full-Stack Web Development</p>
+        <a href="#projects" class="btn btn-light btn-lg mt-3">View My Work</a>
+    </header>
 
-        <div class="col-md-6 d-md-block d-sm-none">
-            <p>Hi,im mina magdy,a web Developer.</p>
-            <img src="mina.jpg " style="width: 200px;" alt="">    
-        </div>
-        <div class=" col-md-6 d-md-block d-sm-none sec">
-
-        <p >"I'm a web developer specializing in 
-            building interactive websites with a focus on user experience. 
-             I use technologies such as HTML, CSS, JavaScript,
-              and PHP to create fast, functional, and user-friendly websites."</p>
-     </div>
-     <div style="background-color: #80808029;height: 70px; text-align: center;padding-top: 15px;">
-
-    <h1> About</h1>
-     </div>
-    <h2>Introduction:</h2>
-    <p>"I am a passionate web developer with over 3 years of experience in creating websites and web applications. My focus is on clean, efficient code, and building websites that deliver a great user experience."
-    </p>
-    <div style="background-color: #80808029;height: 70px; text-align: center;padding-top: 15px;">
-
-    <h2>skills:</h2>
-    </div>
-    <p>Languages: HTML, CSS, JavaScript, PHP, MySQL
-        Frameworks: React, Node.js, Laravel
-        Tools: Git, Webpack, Bootstrap
-        Design: Figma, Adobe XD, Sketch
+    <section id="about" class="container py-5 animate__animated animate__fadeInUp">
+        <h2 class="text-center section-title">About Me</h2>
+        <p class="text-center mx-auto" style="max-width: 700px;">
+            I am a professional WordPress Developer with extensive experience building complete WordPress websites, customizing themes and plugins, integrating APIs, and optimizing website performance. I focus on delivering modern, responsive, and user-friendly websites.
         </p>
-        <div style="background-color: #80808029;height: 70px; text-align: center;padding-top: 15px;">
-         <h2>Experience</h2>
-       </div>
-        <h3>Falcon-safari         <a href="https://falcon-safari.com/">https://falcon-safari.com/</a>
-        </h3>
-          <p>"Built a safari tour booking website that allows users to browse and book trips. Developed using PHP and MySQL for the booking system."</p>
-       <div class="but">
-        <button >JavaScript</button> <button>React</button> <button>php</button><button>css</button><button>MySQL</button>
-    </div>
-    <div class="">
-        <img class="w-100" src="Screenshot 2024-11-05 154115.png" alt="">
-    </div>
+    </section>
 
-        <div style="background-color: aquamarine;
-        height: 11px;
-        margin-top: 50px;
-      "></div>
-        
-   <h3 style="padding-top: 50px;">Hotel Website:         <a href="https://minamagdy2.github.io/hotel-booking/">https://minamagdy2.github.io/hotel-booking/</a>
+    <section id="skills" class="container py-5">
+        <h2 class="text-center section-title">Skills</h2>
+        <div class="text-center skills-grid">
+            <span class="skill-wordpress">WordPress Development</span>
+            <span class="skill-theme">Custom Themes</span>
+            <span class="skill-elementor">Elementor</span>
+            <span class="skill-woocommerce">WooCommerce</span>
+            <span class="skill-php">PHP / MySQL</span>
+            <span class="skill-html">HTML / CSS / JS</span>
+            <span class="skill-api">API Integration</span>
+            <span class="skill-seo">SEO & Optimization</span>
+            <span class="skill-hosting">Hosting / cPanel</span>
+        </div>
+    </section>
 
- </h3>
- <p>"A hotel booking website where users can check availability and book rooms."
- </p>
-    <div class="">
-    <img class="w-100" src="Screenshot 2024-11-05 152042.png" alt="">
-  </div>
-  <div class="but">
-  <button >JavaScript</button> <button>React</button> <button>php</button><button>css</button><button>MySQL</button>
- </div>
- <div style="background-color: aquamarine;
- height: 11px;
- margin-top: 50px;
-"></div>
- 
-<h3 style="padding-top: 50px;">Online-Management-Education:         <a href="https://minamagdy2.github.io/Online-Management-Education-1/">https://minamagdy2.github.io/Online-Management-Education-1/</a>
+    <section id="projects" class="container py-5">
+        <h2 class="text-center section-title mb-5">Featured Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card animate__animated animate__zoomIn">
+                    <img src="Screenshot 2025-11-14 104345.png" alt="FeloHomeCare">
+                    <h4 class="mt-3">FeloHomeCare.com</h4>
+                    <a href="https://felohomecare.com/" target="_blank">Visit Website</a>
+                    <p>Complete WordPress site with custom service pages, SEO, and responsive design.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card animate__animated animate__zoomIn">
+                    <img src="Screenshot 2025-11-14 104614.png" alt="BigDayz">
+                    <h4 class="mt-3">BigDayz.com</h4>
+                    <a href="https://bigdayz.com/" target="_blank">Visit Website</a>
+                    <p>Custom WordPress theme with dynamic content and enhanced UI/UX.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card animate__animated animate__zoomIn">
+                    <img src="Screenshot 2025-11-14 104513.png" alt="FutureTransTravel">
+                    <h4 class="mt-3">FutureTransTravel.com</h4>
+                    <a href="https://futuretranstravel.com/" target="_blank">Visit Website</a>
+                    <p>Full WordPress implementation for travel agency with booking features.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card animate__animated animate__zoomIn">
+                    <img src="Screenshot 2025-11-14 104707.png" alt="LegacyLiveaboards">
+                    <h4 class="mt-3">LegacyLiveaboards.com</h4>
+                    <a href="https://legacyliveaboards.com/" target="_blank">Visit Website</a>
+                    <p>WordPress site for diving trips with custom layouts and optimized performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</h3>
-<p>"A course platform where students can watch videos, find out grades and details of subjects"
-</p>
-<div class="">
-<img class="w-100" src="Screenshot 2024-12-15 182133.png" alt="">
-</div>
-<div class="but">
-<button >JavaScript</button> <button>React</button> <button>php</button><button>css</button><button>MySQL</button>
-</div>
- <div style="background-color: aquamarine;
- height: 11px;
- margin-top: 50px;
-"></div>
-</div>
-<h3 style="padding-top: 50px;">Library Website:
-</h3>
-<p>"Developed a website for a library that allows users to browse and check out books online."
-    "</p>
-    <div class="">
-    <img class="w-100" src="Screenshot 2024-11-05 150624.png" alt="">
-</div>
-<div class="but">
-<button >JavaScript</button> <button>React</button> <button>php</button><button>css</button><button>MySQL</button>
-</div>
-<div style="background-color: aquamarine;
-height: 11px;
-margin-top: 50px;
-"></div>
+    <section id="contact" class="container py-5 animate__animated animate__fadeInUp">
+        <h2 class="text-center section-title">Contact Me</h2>
+        <div class="contact-card animate__animated animate__fadeInUp">
+            <p><strong>Email:</strong> <a href="mailto:minagdy83@gmail.com">minagdy83@gmail.com</a></p>
+            <p><strong>Phone:</strong> 01009387113</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/MinaMagdy2" target="_blank">github.com/MinaMagdy2</a></p>
+        </div>
+    </section>
 
+    <footer>
+        <p>© 2025 Mina Magdy — WordPress Developer</p>
+    </footer>
 
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
